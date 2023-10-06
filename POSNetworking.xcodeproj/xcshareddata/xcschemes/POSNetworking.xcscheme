@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "212B41B91B85B89300B59E48"
-               BuildableName = "libPOSNetworking.a"
+               BlueprintIdentifier = "28A770F02AD0338D0066428C"
+               BuildableName = "POSNetworking.framework"
                BlueprintName = "POSNetworking"
                ReferencedContainer = "container:POSNetworking.xcodeproj">
             </BuildableReference>
@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -45,14 +43,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "212B41B91B85B89300B59E48"
-            BuildableName = "libPOSNetworking.a"
+            BlueprintIdentifier = "28A770F02AD0338D0066428C"
+            BuildableName = "POSNetworking.framework"
             BlueprintName = "POSNetworking"
             ReferencedContainer = "container:POSNetworking.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -63,8 +59,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "212B41B91B85B89300B59E48"
-            BuildableName = "libPOSNetworking.a"
+            BlueprintIdentifier = "28A770F02AD0338D0066428C"
+            BuildableName = "POSNetworking.framework"
             BlueprintName = "POSNetworking"
             ReferencedContainer = "container:POSNetworking.xcodeproj">
          </BuildableReference>

@@ -1,0 +1,4 @@
+github "cloud-ios-tech/Aspects" "c3125c5063748c6aa80f18cce54ecc128b51ba8f"
+github "cloud-ios-tech/POSErrorHandling" "51d98e37ba8ccbc991ae9acfaec93b34663a8d06"
+github "cloud-ios-tech/POSScheduling" "037f536a28d8fdbf83099e66fff029e65fabfe4e"
+github "cloud-ios-tech/ReactiveObjC" "c1f03d8f1d298ae1f1f302365c6292afa5ce74f1"
