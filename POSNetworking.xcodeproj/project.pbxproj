@@ -53,6 +53,9 @@
 		28A7713B2AD0355B0066428C /* POSErrorHandling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2879589F2ACF289800E4124B /* POSErrorHandling.xcframework */; };
 		28A7713D2AD0355B0066428C /* POSScheduling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287958A02ACF289800E4124B /* POSScheduling.xcframework */; };
 		28A7713F2AD0355B0066428C /* ReactiveObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287958A12ACF289800E4124B /* ReactiveObjC.xcframework */; };
+		35FCE87B2AE9843700512D7F /* NSHTTPURLResponse+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22C20EBAC3A0088EF8A /* NSHTTPURLResponse+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35FCE87C2AE9861000512D7F /* NSURLCache+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22620EBAC3A0088EF8A /* NSURLCache+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35FCE87D2AE9861600512D7F /* NSURLSession+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22420EBAC3A0088EF8A /* NSURLSession+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68E799CF20ECF7C900DB02A3 /* NSCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AFBB9B20E546B3009549C5 /* NSCategoriesTests.m */; };
 		68E799D220EE2EF600DB02A3 /* POSStaticHostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E799D120EE2EF600DB02A3 /* POSStaticHostTests.m */; };
 		68EDC26320ECE9730088EF8A /* POSHTTPGatewayLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AFBB9A20E546B3009549C5 /* POSHTTPGatewayLeakTests.m */; };
@@ -340,26 +343,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A770FA2AD034350066428C /* POSNetworking.h in Headers */,
-				28A770FB2AD034470066428C /* POSHost.h in Headers */,
 				28A770F82AD034260066428C /* POSHTTPGateway.h in Headers */,
-				28A770FE2AD0345C0066428C /* POSHTTPRequestBuilder.h in Headers */,
-				28A770FF2AD0346D0066428C /* POSHTTPHEAD.h in Headers */,
+				28A770F92AD0342E0066428C /* POSHTTPGatewayOptions.h in Headers */,
+				28A770FB2AD034470066428C /* POSHost.h in Headers */,
+				28A770FC2AD034490066428C /* POSStaticHost.h in Headers */,
 				28A770FD2AD0344F0066428C /* POSHTTPGET.h in Headers */,
-				28A771032AD0348D0066428C /* POSHTTPRequestOptions.h in Headers */,
-				28A771052AD034A90066428C /* POSHTTPResponse.h in Headers */,
-				28A771072AD034B80066428C /* NSDictionary+POSNetworking.h in Headers */,
+				28A770FF2AD0346D0066428C /* POSHTTPHEAD.h in Headers */,
+				28A771002AD034770066428C /* POSHTTPPOST.h in Headers */,
 				28A771012AD0347D0066428C /* POSHTTPPUT.h in Headers */,
 				28A771022AD034820066428C /* POSHTTPRequest.h in Headers */,
-				28A771002AD034770066428C /* POSHTTPPOST.h in Headers */,
-				28A771082AD034C80066428C /* NSError+POSNetworking.h in Headers */,
-				28A7710C2AD034F20066428C /* NSURLSessionTask+POSNetworking.h in Headers */,
-				28A7710A2AD034E70066428C /* NSURL+POSNetworking.h in Headers */,
+				28A770FE2AD0345C0066428C /* POSHTTPRequestBuilder.h in Headers */,
+				28A771032AD0348D0066428C /* POSHTTPRequestOptions.h in Headers */,
 				28A771042AD034A00066428C /* POSHTTPRequestProgress.h in Headers */,
-				28A7710B2AD034EC0066428C /* NSNumber+POSNetworking.h in Headers */,
+				28A771052AD034A90066428C /* POSHTTPResponse.h in Headers */,
 				28A771062AD034AD0066428C /* POSHTTPResponseOptions.h in Headers */,
+				28A771072AD034B80066428C /* NSDictionary+POSNetworking.h in Headers */,
+				28A771082AD034C80066428C /* NSError+POSNetworking.h in Headers */,
+				35FCE87B2AE9843700512D7F /* NSHTTPURLResponse+POSNetworking.h in Headers */,
+				28A7710B2AD034EC0066428C /* NSNumber+POSNetworking.h in Headers */,
 				28A771092AD034DD0066428C /* NSString+POSNetworking.h in Headers */,
-				28A770FC2AD034490066428C /* POSStaticHost.h in Headers */,
-				28A770F92AD0342E0066428C /* POSHTTPGatewayOptions.h in Headers */,
+				28A7710A2AD034E70066428C /* NSURL+POSNetworking.h in Headers */,
+				35FCE87C2AE9861000512D7F /* NSURLCache+POSNetworking.h in Headers */,
+				35FCE87D2AE9861600512D7F /* NSURLSession+POSNetworking.h in Headers */,
+				28A7710C2AD034F20066428C /* NSURLSessionTask+POSNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +567,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -609,7 +615,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

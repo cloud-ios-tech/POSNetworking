@@ -10,6 +10,7 @@
 #import <POSNetworking/POSHTTPGateway.h>
 #import <POSNetworking/POSHTTPGatewayOptions.h>
 
+#import <POSNetworking/POSHost.h>
 #import <POSNetworking/POSStaticHost.h>
 
 #import <POSNetworking/POSHTTPGET.h>
@@ -18,17 +19,24 @@
 #import <POSNetworking/POSHTTPPUT.h>
 
 #import <POSNetworking/POSHTTPRequest.h>
+#import <POSNetworking/POSHTTPRequestBuilder.h>
 #import <POSNetworking/POSHTTPRequestOptions.h>
+#import <POSNetworking/POSHTTPRequestProgress.h>
 
 #import <POSNetworking/POSHTTPResponse.h>
 #import <POSNetworking/POSHTTPResponseOptions.h>
 
 #import <POSNetworking/NSDictionary+POSNetworking.h>
 #import <POSNetworking/NSError+POSNetworking.h>
+#import <POSNetworking/NSHTTPURLResponse+POSNetworking.h>
+#import <POSNetworking/NSNumber+POSNetworking.h>
 #import <POSNetworking/NSString+POSNetworking.h>
 #import <POSNetworking/NSURL+POSNetworking.h>
-#import <POSNetworking/NSNumber+POSNetworking.h>
-#import <POSNetworking/NSHTTPURLResponse+POSNetworking.h>
+
+#import <POSNetworking/NSURLCache+POSNetworking.h>
+#import <POSNetworking/NSURLSession+POSNetworking.h>
+#import <POSNetworking/NSURLSessionTask+POSNetworking.h>
+
 
 
 //! Project version number for POSNetworking.
