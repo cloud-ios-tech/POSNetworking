@@ -7,6 +7,7 @@
 //
 
 #import "NSError+POSNetworking.h"
+#import "POSHTTPGET.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +23,12 @@ NSString * const kPOSServerErrorCategory = @"Server";
 @implementation NSString (POSNetworkingError)
 
 - (nullable NSString *)pos_localizedNetworkingErrorCategory {
-    return [self pos_localizedInBundle:@"POSNetworking-Resources" table:@"NSError"];
+    NSBundle *mainBundle = [NSBundle bundleForClass:POSHTTPGET.class];
+    if (!mainBundle) {
+        return nil;
+    }
+
+    return [mainBundle localizedStringForKey:self value:nil table:@"NSError"];
 }
 
 @end

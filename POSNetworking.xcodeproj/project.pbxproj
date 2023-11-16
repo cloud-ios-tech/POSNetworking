@@ -53,6 +53,7 @@
 		28A7713B2AD0355B0066428C /* POSErrorHandling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2879589F2ACF289800E4124B /* POSErrorHandling.xcframework */; };
 		28A7713D2AD0355B0066428C /* POSScheduling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287958A02ACF289800E4124B /* POSScheduling.xcframework */; };
 		28A7713F2AD0355B0066428C /* ReactiveObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287958A12ACF289800E4124B /* ReactiveObjC.xcframework */; };
+		28E2DF7E2B06776C00C8AD43 /* NSError.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68ADFC9221148E1B00BA89F2 /* NSError.strings */; };
 		35FCE87B2AE9843700512D7F /* NSHTTPURLResponse+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22C20EBAC3A0088EF8A /* NSHTTPURLResponse+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35FCE87C2AE9861000512D7F /* NSURLCache+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22620EBAC3A0088EF8A /* NSURLCache+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35FCE87D2AE9861600512D7F /* NSURLSession+POSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDC22420EBAC3A0088EF8A /* NSURLSession+POSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -456,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E2DF7E2B06776C00C8AD43 /* NSError.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
