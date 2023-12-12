@@ -37,7 +37,9 @@
 #import <POSNetworking/NSURLSession+POSNetworking.h>
 #import <POSNetworking/NSURLSessionTask+POSNetworking.h>
 
-
+#import <POSNetworking/POSHostStub.h>
+#import <POSNetworking/POSHTTPGatewayStub.h>
+#import <POSNetworking/POSTesting.h>
 
 //! Project version number for POSNetworking.
 FOUNDATION_EXPORT double POSNetworkingVersionNumber;
